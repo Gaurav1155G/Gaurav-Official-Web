@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Official Notice - Under Management</title>
+<title>Gaurav - Official Portal & Services</title>
 
 <style>
 * {
@@ -100,7 +100,7 @@ main {
   border: 1px solid #d1d5db;
   border-top: 5px solid #0b2c59;
   border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
   padding: 35px 30px;
   text-align: center;
 }
@@ -119,14 +119,14 @@ main {
 }
 
 .notice-card h2 {
-  font-size: clamp(26px, 5vw, 38px);
+  font-size: clamp(24px, 5vw, 34px);
   color: #0b2c59;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
 .notice-card h2 span {
-  color: #d97706; /* Formal Saffron-Gold */
+  color: #d97706;
 }
 
 .divider {
@@ -137,8 +137,8 @@ main {
 }
 
 .message {
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.6;
   color: #374151;
   max-width: 560px;
   margin: 0 auto 28px;
@@ -146,6 +146,69 @@ main {
 
 .message strong {
   color: #0b2c59;
+}
+
+/* Website Action Buttons Container */
+.portal-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 560px;
+  margin: 0 auto 30px;
+}
+
+.portal-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 5px;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+  background-color: #0b2c59;
+  color: #ffffff;
+  border-bottom: 4px solid #ff9933;
+}
+
+.btn-primary:hover {
+  background-color: #082042;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(11, 44, 89, 0.22);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0b2c59;
+  border: 1.5px solid #0b2c59;
+  border-bottom: 4px solid #138808;
+}
+
+.btn-secondary:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-sub {
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.85;
+  font-weight: 500;
 }
 
 /* Formal Status Box */
@@ -209,6 +272,7 @@ footer small {
   .header-text h1 { font-size: 18px; }
   .notice-card { padding: 25px 18px; }
   .nav-bar-inner { flex-direction: column; gap: 4px; text-align: center; }
+  .portal-buttons { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -230,26 +294,38 @@ footer small {
   <div class="nav-bar">
     <div class="nav-bar-inner">
       <span>OFFICIAL INFORMATION WEB</span>
-      <span>STATUS: MAINTENANCE / MANAGEMENT</span>
+      <span>PORTAL DIRECTORY & SERVICES</span>
     </div>
   </div>
 
   <main>
     <div class="notice-card">
-      <div class="badge">PUBLIC NOTICE</div>
-      <h2>UNDER <span>MANAGEMENT</span></h2>
+      <div class="badge">OFFICIAL PORTALS</div>
+      <h2>SELECT <span>WEBSITE</span></h2>
       <div class="divider"></div>
 
       <p class="message">
-        This section is currently <strong>under management</strong> for scheduled updates and will be available soon.
-        We appreciate your patience and cooperation.
+        Main dashboard is currently <strong>under management</strong>. You can directly access our active portals using the official links below:
       </p>
+
+      <!-- Dono Websites ke Buttons -->
+      <div class="portal-buttons">
+        <a href="https://djportal.onrender.com/" target="_blank" rel="noopener noreferrer" class="portal-btn btn-primary">
+          <span class="btn-title">🌐 DJ Portal</span>
+          <span class="btn-sub">Visit Official Portal →</span>
+        </a>
+
+        <a href="https://djesports.onrender.com/" target="_blank" rel="noopener noreferrer" class="portal-btn btn-secondary">
+          <span class="btn-title">🎮 DJ Esports</span>
+          <span class="btn-sub">Tournament & Slot Booking →</span>
+        </a>
+      </div>
 
       <div class="status-box">
         <div class="dot"></div>
         <div class="status-text">
-          <strong>Status: Expected Soon</strong>
-          <small>Please check back later for official updates</small>
+          <strong>Portals Active & Online</strong>
+          <small>Click any button above to open the respective website</small>
         </div>
       </div>
     </div>
